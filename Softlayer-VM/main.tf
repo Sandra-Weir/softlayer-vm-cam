@@ -22,6 +22,7 @@ resource "ibm_compute_vm_instance" "vm_instance" {
   datacenter  = "${var.vm_instance_datacenter}"
   ssh_key_ids = ["${ibm_compute_ssh_key.ibm_cloud_temp_public_key.id}"]
   os_reference_code = "${var.vm_instance_os_reference_code}"
+  disks = [100,100]
 }
 
 resource "tls_private_key" "ssh" {
