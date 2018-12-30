@@ -1,0 +1,75 @@
+{
+  "input_datatypes": [ ],
+  "input_namespaces": [ ],
+  "output_namespace": "",
+  "input_groups": [
+    {
+      "name": "Instances-ibm_compute_vm_instance.vm_instance",
+      "label": "Instances - ibm_compute_vm_instance.vm_instance"
+    },
+    {
+      "name": "Other-ibm",
+      "label": "Other - ibm"
+    }
+  ],
+  "output_groups": [ ],
+  "template_input_params": [
+    {
+      "name": "vm_instance_domain",
+      "label": "Vm Instance Domain",
+      "description": "The domain for the computing instance.",
+      "type": "string",
+      "default": "IBM.cloud",
+      "validation": "",
+      "group_name": "Instances-ibm_compute_vm_instance.vm_instance",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    },
+    {
+      "name": "vm_instance_hostname",
+      "label": "Vm Instance Hostname",
+      "description": "The hostname for the computing instance.",
+      "type": "string",
+      "default": "swicp3111",
+      "validation": "",
+      "group_name": "Instances-ibm_compute_vm_instance.vm_instance",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    },
+    {
+      "name": "vm_instance_datacenter",
+      "label": "Vm Instance Datacenter",
+      "description": "The datacenter in which you want to provision the instance. NOTE: If dedicated_host_name or dedicated_host_id is provided then the datacenter should be same as the dedicated host datacenter.",
+      "type": "string",
+      "default": "dal09",
+      "validation": "",
+      "group_name": "Instances-ibm_compute_vm_instance.vm_instance",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    },
+    {
+      "name": "vm_instance_os_reference_code",
+      "label": "Vm Instance Os Reference Code",
+      "description": "Generated",
+      "type": "string",
+      "default": "B1_1X2X25",
+      "validation": "",
+      "group_name": "Instances-ibm_compute_vm_instance.vm_instance",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    }
+  ],
+  "template_output_params": [ ]
+}
