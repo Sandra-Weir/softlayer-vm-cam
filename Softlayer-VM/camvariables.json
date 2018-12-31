@@ -33,7 +33,7 @@
       "label": "Vm Instance Hostname",
       "description": "The hostname for the computing instance.",
       "type": "string",
-      "default": "swicp3111",
+      "default": "swicp311",
       "validation": "",
       "group_name": "Instances-ibm_compute_vm_instance.vm_instance",
       "required": true,
