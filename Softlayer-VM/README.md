@@ -1,0 +1,8 @@
+## Softlayer-VM infrastructure
+
+Created 12/30/18 by admin. for Softlayer-VM
+
+
+## Design Decisions
+| Design item                | Decision|
+| :----------------------------------- | :--------------------------------------------------------------------------------|
