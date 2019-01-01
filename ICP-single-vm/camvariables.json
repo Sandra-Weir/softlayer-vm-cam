@@ -19,7 +19,7 @@
       "label": "Vm Instance Domain",
       "description": "The domain for the computing instance.",
       "type": "string",
-      "default": "IBM.cloud",
+      "default": "ibm.cloud",
       "validation": "",
       "group_name": "Instances-ibm_compute_vm_instance.vm_instance",
       "required": true,
