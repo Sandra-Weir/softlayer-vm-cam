@@ -15,8 +15,8 @@ provider "ibm" {
 
 
 resource "ibm_compute_vm_instance" "vm_instance" {
-  cores = 1
-  memory      = 1024
+  cores = 16
+  memory      = 32768
   domain      = "${var.vm_instance_domain}"
   hostname    = "${var.vm_instance_hostname}"
   datacenter  = "${var.vm_instance_datacenter}"
