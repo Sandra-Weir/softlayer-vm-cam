@@ -24,9 +24,8 @@ resource "ibm_compute_vm_instance" "vm_instance" {
   os_reference_code = "${var.vm_instance_os_reference_code}"
   network_speed = "1000"
   hourly_billing = "true"
-  local_disk = "false"
-  disk_size = 100
-  disks = [100]
+  local_disk = "true"
+  disks = [100,100]
 }
 
 resource "tls_private_key" "ssh" {
