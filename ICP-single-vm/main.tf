@@ -25,7 +25,7 @@ resource "ibm_compute_vm_instance" "vm_instance" {
   network_speed = "1000"
   hourly_billing = "true"
   local_disk = "true"
-  disks = [100,100]
+  disks = [100,200,200]
 }
 
 resource "tls_private_key" "ssh" {
