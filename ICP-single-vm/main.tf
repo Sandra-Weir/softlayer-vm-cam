@@ -24,7 +24,7 @@ resource "ibm_compute_vm_instance" "vm_instance" {
   os_reference_code = "${var.vm_instance_os_reference_code}"
   network_speed = "1000"
   hourly_billing = "true"
-  local_disk = "true"
+  local_disk = "false"
   disks = [100,200,200]
 }
 
