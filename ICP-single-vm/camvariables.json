@@ -61,7 +61,7 @@
       "label": "Vm Instance Os Reference Code",
       "description": "Generated",
       "type": "string",
-      "default": "UBUNTU_16_64",
+      "default": "UBUNTU_18_64",
       "validation": "",
       "group_name": "Instances-ibm_compute_vm_instance.vm_instance",
       "required": true,
