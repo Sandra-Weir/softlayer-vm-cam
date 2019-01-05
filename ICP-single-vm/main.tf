@@ -15,8 +15,8 @@ provider "ibm" {
 
 
 resource "ibm_compute_vm_instance" "vm_instance" {
-  cores = 16
-  memory      = 32768
+  cores = 2
+  memory      = 4096
   domain      = "${var.vm_instance_domain}"
   hostname    = "${var.vm_instance_hostname}"
   datacenter  = "${var.vm_instance_datacenter}"
@@ -25,7 +25,7 @@ resource "ibm_compute_vm_instance" "vm_instance" {
   network_speed = "1000"
   hourly_billing = "true"
   local_disk = "false"
-  disks = [100,200,200]
+  disks = [100,100]
 }
 
 resource "tls_private_key" "ssh" {
